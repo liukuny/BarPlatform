@@ -1,0 +1,22 @@
+#ifndef _CONFIGFILE_CONST
+#define _CONFIGFILE_CONST
+
+// 参数总个数
+#define CONFIGFILE_PARAMCOUNT			6
+// 内网UDP监听IP地址索引
+#define CONFIGFILE_INDEX_INNERADDRIP	0
+// 外网UDP映射IP地址索引
+#define CONFIGFILE_INDEX_OUTERADDRIP	1
+// 外网UDP监听端口索引
+#define CONFIGFILE_INDEX_OUTERADDRPORT	2
+// 用户数据库(oracle)网络地址(服务名)索引
+#define CONFIGFILE_INDEX_USERDBHOSTADDR	3
+// 用户数据库(oracle)用户密码索引
+#define CONFIGFILE_INDEX_USERDBPASS		4
+// 分流服务器内网Ip地址索引
+#define CONFIGFILE_INDEX_PRESERVERADDR	5
+
+
+#endif
+
+

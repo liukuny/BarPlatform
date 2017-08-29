@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\Module\BarInfo.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\ConfigFile.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\datetime.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\gfunction.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\Json.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\JsonCode.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\log.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\netbase.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\Server.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\packetbuf.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\UdpServer.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\MD5.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BarPlatform.cpp" />
+    <ClCompile Include="BarPlatformDlg.cpp" />
+    <ClCompile Include="..\Module\CenterInterface.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Module\CommInterface.cpp">
+      <Filter>Module\源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\Module\BarInfo.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\CenterInterface.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\ConfigFile.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\configfileconst.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\csprotocol.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\datatypedef.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\datetime.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\gclass.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\gconst.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\gfunction.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\Json.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\JsonCode.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\log.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\netbase.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\packetbuf.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\Server.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\UdpServer.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\work.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\MD5.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BarPlatform.h" />
+    <ClInclude Include="BarPlatformDlg.h" />
+    <ClInclude Include="..\..\common\CommonStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Module\CommInterface.h">
+      <Filter>Module\头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Module">
+      <UniqueIdentifier>{56fa4670-1470-47e7-a293-7d7c4168f4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\头文件">
+      <UniqueIdentifier>{dd569ac9-1fa2-4151-a7b7-999efd5758a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\源文件">
+      <UniqueIdentifier>{3c12b7ec-a66d-4102-a00f-17b80e023bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3b307968-8ef2-47fe-a75c-a763fd80fff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reference">
+      <UniqueIdentifier>{36d38ac2-3604-408c-95f4-ef73baf4f83e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BarPlatform.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BarPlatform.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BarPlatform.rc2" />
+    <None Include="..\Release\Update.exe" />
+  </ItemGroup>
+</Project>
