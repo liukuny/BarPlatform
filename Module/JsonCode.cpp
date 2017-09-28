@@ -140,6 +140,13 @@ bool CJsonDecode::DeCodeGameData(const string &strData, list<GameLibItem> &lt)
 				item.game_name = it["game_name"].ToString();
 			}
 		}
+		if (it.HasKey("game_dir"))
+		{
+			if (it["game_dir"].GetType() == json::ValueType::StringVal)
+			{
+				item.game_showname = it["game_dir"].ToString();
+			}
+		}
 		if (it.HasKey("game_icon"))
 		{
 			if (it["game_icon"].GetType() == json::ValueType::StringVal)

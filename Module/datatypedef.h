@@ -163,6 +163,8 @@ struct GameLibItem
 	int64  center_game_id;// game_id;
 	// 游戏名称，方便查看
 	string game_name;
+	// 游戏显示名称
+	string game_showname;
 	// 游戏名称拼音，方便查找
 	string name_py;
 	// 游戏图标相对路径

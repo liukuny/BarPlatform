@@ -601,8 +601,8 @@ void CBarInfo::GetConfigII()
 			{
 				// 调用
 				string strNumIcon = it.param.substr(it.param.rfind('=') + 1);
-				FormatString(strParam, "{\"iconNum\":%s}", strNumIcon.c_str());
-				//FormatString(strParam, "{\"iconNum\":%s, \"barID\":%s}", strNumIcon.c_str(), CConfigFile::GetInstance()->GetBarId().c_str());
+				//FormatString(strParam, "{\"iconNum\":%s}", strNumIcon.c_str());
+				FormatString(strParam, "{\"iconNum\":%s, \"barID\":\"%s\"}", strNumIcon.c_str(), CConfigFile::GetInstance()->GetBarId().c_str());
 				strParam = Base64::base64_encode(strParam);
 				strFileName = strDestPath + "\\" + FindData.cFileName;
 				CLogClient::WriteLog("运行策略文件全名：%s - %s", strFileName.c_str(), strParam.c_str());
@@ -1032,9 +1032,10 @@ void CBarInfo::SaveGameLibInfoToFile()
 				it.game_icon = sPath;
 			}
 		}
-		// 游戏编号，中心游戏库的游戏编号 center_game_id | 游戏名称，方便查看 | 启动程序绝对路径 | 游戏图标绝对路径 | 游戏点击量（排序值） | 游戏分类 | 游戏名称拼音，方便查找 | 主程名
+		// 游戏编号，中心游戏库的游戏编号 center_game_id | 游戏名称，方便查看 | 启动程序绝对路径 | 游戏图标绝对路径 | 游戏点击量（排序值） | 游戏分类 | 游戏名称拼音，方便查找 | 主程名 | 游戏显示名
 		//FormatString(strInfo, "%lld|%s|%s|%s|%lld|%s|%s|%s", it.center_game_id, it.game_name.c_str(), it.launcher.c_str(), it.game_icon.c_str(), it.game_dp, it.category_1.c_str(), it.name_py.c_str(), it.process.c_str());
-		FormatString(strInfo, "%lld|%s|%s|%s|%lld|%s|%s|%s", it.center_game_id, it.game_name.c_str(), it.launcher.c_str(), it.game_icon.c_str(), it.game_dp, it.category_1.c_str(), GetCharSpellCode(it.game_name).c_str(), it.process.c_str());
+		FormatString(strInfo, "%lld|%s|%s|%s|%lld|%s|%s|%s|%s", it.center_game_id, it.game_name.c_str(), it.launcher.c_str(), it.game_icon.c_str(), it.game_dp, 
+			it.category_1.c_str(), GetCharSpellCode(it.game_name).c_str(), it.process.c_str(), it.game_showname.c_str());
 		of << strInfo << "\r\n";
 	}
 	of.close();
